@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.card-container {
+  display: flex;
+  flex-direction: column; /* Change to column */
+  align-items: center; /* Align items to the center */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  width: 90%; /* Set width to 90% to allow some padding */
+  max-width: 800px; /* Set max-width to limit card width on larger screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

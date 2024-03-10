@@ -27,7 +27,7 @@ class Team extends React.Component<SchoolProps> {
     const oneTeam = this.props;
 
     return (
-      <div>
+      <div className="card">
         <h3>{oneTeam.school}</h3>
         <h4>Mascot: {oneTeam.name}</h4>
         <h4>
@@ -40,7 +40,7 @@ class Team extends React.Component<SchoolProps> {
 
 function TeamList() {
   return (
-    <div>
+    <div className="card-container">
       {schoolData.teams.map((oneTeam: SchoolProps, index: number) => (
         <Team key={index} {...oneTeam} />
       ))}
